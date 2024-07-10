@@ -1,0 +1,187 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+.header .top,
+.header .bottom {
+  border-bottom: 1px solid #eee;
+}
+.header .top .row {
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.header .top .left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header .top .right {
+  display: flex;
+  align-items: center;
+}
+.header .top .right .item {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 12px;
+  transition: var(--transitionSlow);
+  font-size: 12px;
+  font-weight: 500;
+}
+.header .top .right .item:hover {
+  background: #f5f5f5;
+  border-radius: 99rem;
+}
+.header .bottom .row {
+  height: 55px;
+  align-items: center;
+}
+.header .bottom .item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  transition: var(--transitionSlow);
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .bottom .item:hover {
+  background: #f5f5f5;
+  border-radius: 99rem;
+}
+.header .bottom .border {
+  background-color: #eee;
+  display: block;
+  height: 16px;
+  width: 1px;
+  margin: 0 10px;
+}
+.header .search {
+  position: relative;
+  width: 280px;
+  height: 40px;
+}
+.header .search .searchBtn {
+  height: 40px;
+  width: 38px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 0;
+}
+.header .search .searchInput {
+  background-color: #f5f5f5;
+  border: 1px solid #fff;
+  border-radius: 99rem;
+  box-sizing: border-box;
+  caret-color: var(--secondColor);
+  font-size: 14px;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 38px;
+  padding-right: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  transition: var(--transitionFast);
+}
+.header .search .searchInput:hover, .header .search .searchInput:focus {
+  border-color: var(--secondColor);
+  background-color: #fff;
+}
+.header .languages,
+.header .currency {
+  gap: 4px;
+  cursor: pointer;
+}
+.header .languages .flag,
+.header .languages .arrowDown,
+.header .currency .flag,
+.header .currency .arrowDown {
+  display: flex;
+  align-items: center;
+}
+.header .subNav,
+.header .customerBox {
+  display: flex;
+  align-items: center;
+}
+.header .customerBox a {
+  font-weight: 600;
+}
+.header .customerBox .login {
+  margin-left: 8px;
+  background-color: var(--secondColor);
+  border-radius: 99rem;
+  color: #fff;
+}
+.header .customerBox .login:hover {
+  background-color: var(--secondColor) !important;
+}
+.header .whereToGo {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 99rem;
+  padding: 0 10px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.header .whereToGo span {
+  padding-left: 4px;
+}
+.header .moreBtn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 14px;
+  position: relative;
+}
+.header .moreBtn:before {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 3px;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+}
+.header .moreBtn:after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 3px;
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+.header .moreBtn span {
+  background: #000;
+  border-radius: 50%;
+  display: block;
+  height: 3px;
+  width: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .voucher {
+  display: flex;
+  align-items: center;
+}
+.header .voucher img {
+  height: 24px;
+  margin-right: 6px;
+  width: 24px;
+}/*# sourceMappingURL=header.css.map */

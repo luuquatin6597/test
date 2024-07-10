@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klook - Du Lịch Tự Túc, Vé Tham Quan, Tour và Hơn Thế Nữa</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+    <style>
+        :root {
+            /* breakpoint */
+            --pc: 1200px;
+
+            /* color */
+            --mainColor: #212121;
+            --secondColor: #ff5b00;
+
+            /* padding */
+            --paddingLeft: 20px;
+            --paddingRight: 20px;
+
+            /* transition */
+            --transitionFast: all .25s ease-in-out;
+            --transitionSlow: all .75s ease-in-out;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/discount.css">
+    <link rel="stylesheet" href="style/whychoose.css">
+    <link rel="stylesheet" href="style/featured.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="left">
+                        <div class="logo">
+                            <a href="#" title="Logo">
+                                <object data="assets/logo.svg" type="image/svg+xml"></object>
+                            </a>
+                        </div>
+
+                        <div class="search">
+                            <button class="searchBtn">
+                                <svg width="20" height="20" viewBox="0 0 48 48" fill="none">
+                                    <circle cx="22" cy="22" r="18" stroke="#212121" stroke-width="3.6"></circle>
+                                    <path d="M35 35L44 44" stroke="#212121" stroke-width="3.6" stroke-linecap="round">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <input type="text" class="searchInput" placeholder="Tìm theo điểm đến, hoạt động">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="item languages">
+                            <div class="flag">
+                                <svg data-v-2a94e252="" viewBox="0 0 60 40" width="22" height="22">
+                                    <path fill="#DA251D" d="M0 0h60v40H0z"></path>
+                                    <path fill="#FF0" d="M18.6 15.6h22.8L22.9 29 30 7.3 37.1 29"></path>
+                                </svg>
+                            </div>
+
+                            <div class="arrowDown">
+                                <svg width="12" height="12" viewBox="0 0 48 48" fill="none">
+                                    <path
+                                        d="M22.5409 31.4437L10.5787 18.6839C9.97995 18.0453 10.4328 17 11.3082 17L36.6918 17C37.5672 17 38.0201 18.0453 37.4213 18.6839L25.4591 31.4437C24.6689 32.2865 23.3311 32.2865 22.5409 31.4437Z"
+                                        fill="#757575" stroke="#757575" stroke-width="3.6" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="item currency">
+                            <div class="flag">
+                                USD
+                            </div>
+
+                            <div class="arrowDown">
+                                <svg width="12" height="12" viewBox="0 0 48 48" fill="none">
+                                    <path
+                                        d="M22.5409 31.4437L10.5787 18.6839C9.97995 18.0453 10.4328 17 11.3082 17L36.6918 17C37.5672 17 38.0201 18.0453 37.4213 18.6839L25.4591 31.4437C24.6689 32.2865 23.3311 32.2865 22.5409 31.4437Z"
+                                        fill="#757575" stroke="#757575" stroke-width="3.6" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="subNav">
+                            <a href="#" title="Mở ứng dụng" class="item">Mở ứng dụng</a>
+                            <a href="#" title="Trợ giúp" class="item">Trợ giúp</a>
+                            <a href="#" title="Xem gần đây" class="item">Xem gần đây</a>
+                        </div>
+
+                        <div class="customerBox">
+                            <div class="item register">
+                                <a href="#" title="Đăng ký">Đăng ký</a>
+                            </div>
+                            <div class="item login">
+                                <a href="#" title="Đăng nhập">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <a class="whereToGo" href="#" title="Bạn muốn đi đâu?">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M12.51 8.935a2.507 2.507 0 11-5.014 0 2.507 2.507 0 015.013 0zm-1.4 0a1.107 1.107 0 11-2.214 0 1.107 1.107 0 012.213 0z"
+                                clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd"
+                                d="M17 9c0 4.26-4.321 7.563-6.173 8.783a1.492 1.492 0 01-1.654 0C7.321 16.563 3 13.26 3 9a7 7 0 0114 0zm-1.4 0c0 1.65-.843 3.224-2.05 4.613-1.194 1.376-2.62 2.426-3.494 3a.1.1 0 01-.056.02.1.1 0 01-.056-.02c-.873-.574-2.3-1.624-3.495-3C5.243 12.224 4.4 10.65 4.4 9a5.6 5.6 0 0111.2 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Bạn muốn đi đâu?</span>
+                    </a>
+
+                    <div class="subNav">
+                        <a class="item" href="#" titlte="Tất cả">Tất cả</a>
+                        <a class="item" href="#" titlte="Tour & Trải nghiệm">Tour & Trải nghiệm</a>
+                        <a class="item" href="#" titlte="Vé tham quan">Vé tham quan</a>
+                        <a class="item" href="#" titlte="Khách sạn">Khách sạn</a>
+                        <a class="item" href="#" titlte="Di chuyển">Di chuyển</a>
+                        <a class="item" href="#" titlte="Thuê tự lái">Thuê xe tự lái</a>
+                        <div class="item">
+                            <div class="moreBtn">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border"></div>
+
+                    <a class="voucher item">
+                        <img src="https://res.klook.com/image/upload/v1639126248/brand%20refresh%20category%20icon/desktop/category_36_gift_card.png"
+                            alt="image">
+                        <span>Phiếu Quà Tặng Klook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <img src="assets/slider.webp" alt="Slider">
+        <div class="content">
+            <div class="container">
+                <h2>THẾ GIỚI TRỌN NIỀM VUI</h2>
+                <p>Khám phá niềm vui của bạn mọi lúc, mọi nơi - từ chuyến du lịch ngẫu hứng tới những cuộc phiêu lưu
+                    khắp
+                    thế giới</p>
+                <div class="search">
+                    <div class="icon">
+                        <svg width="20" height="20" viewBox="0 0 48 48" fill="none">
+                            <circle cx="22" cy="22" r="18" stroke="#A8A8A8" stroke-width="3.6"></circle>
+                            <path d="M35 35L44 44" stroke="#A8A8A8" stroke-width="3.6" stroke-linecap="round"></path>
+                        </svg>
+                    </div>
+                    <input class="input" type="text" placeholder="Khám phá Đà Nẵng" />
+                    <button class="button">Khám phá</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrow arrowLeft">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+            </svg>
+        </div>
+        <div class="arrow arrowRight">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="discountForU container">
+        <div class="bigTitle">Ưu đãi cho bạn</div>
+        <div class="slide">
+            <div class="grid">
+                <a class="item col-4" href="#" title="Ưu đãi cho bạn">
+                    <div class="inner">
+                        <img class="mainImg" src="assets/discount-1.webp" alt="Ưu đãi cho bạn">
+                    </div>
+                </a>
+
+                <a class="item col-4" href="#" title="Ưu đãi cho bạn">
+                    <div class="inner">
+                        <img class="mainImg" src="assets/discount-2.webp" alt="Ưu đãi cho bạn">
+                    </div>
+                </a>
+
+                <a class="item col-4" href="#" title="Ưu đãi cho bạn">
+                    <div class="custom inner">
+                        <div class="content">
+                            <div class="processing">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                </svg>
+                                <p>Đang diễn ra</p>
+                            </div>
+                            <div class="title">Khuyến mãi giữa năm có giới hạn thời gian</div>
+                            <div class="subTitle">Ưu đãi siêu giá trị ở Trung Quốc đại lục</div>
+                            <div class="now">Mua ngay bây giờ</div>
+                        </div>
+                        <img src="assets/distcount-icon.webp" alt="Ưu đãi cho bạn">
+                        <svg class="icon left" width="45" height="70" viewBox="0 0 45 70" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="icon-up">
+                            <path
+                                d="M-25.8158 67.5661C-10.2635 63.5911 5.01647 58.5172 19.896 52.3664C51.811 39.1736 52.5075 32.9033 22.8262 19.6451C10.2731 14.0378 -2.50194 9.24121 -15.4281 5.24306C-40.6889 -2.57027 -53.3463 -2.62015 -58.5545 26.8101C-59.5909 32.6667 -60.2049 38.5679 -60.4046 44.4686C-61.1049 65.1619 -53.0394 74.5242 -25.8158 67.5661Z"
+                                fill="white" fill-opacity="0.2"></path>
+                        </svg>
+                        <svg class="icon right" width="36" height="64" viewBox="0 0 36 64" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="icon-down">
+                            <path
+                                d="M20.13 44.9775C15.5545 41.0072 11.1859 36.8871 7.02502 32.6311C-1.5095 23.9012 -4.00549 11.2831 14.1843 5.8154C21.6384 3.57475 29.2603 1.99382 36.9557 1.07924C54.7772 -1.03882 65.8326 4.07239 65.9318 26.2229C65.9568 31.815 65.7663 37.4107 65.3593 42.9964C63.466 68.9807 50.194 68.1695 32.6459 55.0617C28.3857 51.8795 24.2105 48.5183 20.13 44.9775Z"
+                                fill="white" fill-opacity="0.2"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="arrow next">
+                <svg width="16" height="16" viewBox="0 0 48 48" fill="none">
+                    <path d="M17 8L35 24L26 32L17 40" stroke="#212121" stroke-width="3.6" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="whyChooseKlook container">
+        <div class="bigTitle">Vì sao bạn nên chọn Klook</div>
+        <div class="grid">
+            <div class="item col-3">
+                <div class="inner">
+                    <img src="assets/whychoose-1.webp" alt="Vô vàn lựa chọn">
+                    <p class="title">Vô vàn lựa chọn</p>
+                    <p class="text">Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn và nhiều trải
+                        nghiệm thú vị</p>
+                </div>
+            </div>
+
+            <div class="item col-3">
+                <div class="inner">
+                    <img src="assets/whychoose-2.webp" alt="Chơi vui, giá tốt">
+                    <p class="title">Chơi vui, giá tốt</p>
+                    <p class="text">Trải nghiệm chất lượng với giá tốt. Tích luỹ Klook credit để được thêm ưu đãi</p>
+                </div>
+            </div>
+
+            <div class="item col-3">
+                <div class="inner">
+                    <img src="assets/whychoose-3.webp" alt="Dễ dàng và tiện lợi">
+                    <p class="title">Dễ dàng và tiện lợi</p>
+                    <p class="text">Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn tha hồ khám phá
+                    </p>
+                </div>
+            </div>
+
+            <div class="item col-3">
+                <div class="inner">
+                    <img src="assets/whychoose-4.webp" alt="Đáng tin cậy">
+                    <p class="title">Đáng tin cậy</p>
+                    <p class="text">Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành cùng bạn mọi lúc,
+                        mọi nơi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured container">
+        <div class="bigTitle">Các hoạt động nổi bật</div>
+        <div class="grid">
+            <div class="item col-3">
+                <a class="inner" href="#" title="Vé Safari World Bangkok">
+                    <div class="top">
+                        <img src="assets/featured-1.webp" alt="Vé Safari World Bangkok">
+                        <div class="content">
+                            <span class="category">Sở thú & Thuỷ cung • Bangkok</span>
+                            <p class="title">Vé Safari World Bangkok</p>
+                            <div class="tag">
+                                <span>Bán chạy</span>
+                                <span>Hoàn tiền dễ dàng</span>
+                            </div>
+                            <div class="rating">
+                                <div class="star">★ 4.6</div>
+                                <div class="point">(17,663)</div>
+                                <div class="total">• 500K+ Đã được đặt</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="price">
+                            <span class="root">Từ US$ 20.59</span>
+                            <span>US$ 27.45</span>
+                        </div>
+                        <div class="policy">Đảm bảo chính sách giá tốt</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item col-3">
+                <a class="inner" href="#" title="Tour Công Viên Bangkok Safari World với Xe Đưa Đón Chung/Riêng">
+                    <div class="top">
+                        <img src="assets/featured-2.webp"
+                            alt="Tour Công Viên Bangkok Safari World với Xe Đưa Đón Chung/Riêng">
+                        <div class="content">
+                            <span class="category">Tour • Bangkok</span>
+                            <p class="title">Tour Công Viên Bangkok Safari World với Xe Đưa Đón Chung/Riêng</p>
+                            <div class="tag">
+                                <span>Bán chạy</span>
+                                <span>Hoàn tiền dễ dàng</span>
+                            </div>
+                            <div class="rating">
+                                <div class="star">★ 4.8</div>
+                                <div class="point">(4,623)</div>
+                                <div class="total">• 100K+ Đã được đặt</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="price">
+                            <span class="root">Từ US$ 42.10</span>
+                            <span>US$ 51.35</span>
+                        </div>
+                        <div class="policy">Đảm bảo chính sách giá tốt</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item col-3">
+                <a class="inner" href="#" title="Tour Riêng Khám Phá Pattaya từ Bangkok hoặc Pattaya">
+                    <div class="top">
+                        <div class="label">Klook chọn lọc</div>
+                        <img src="assets/featured-3.webp" alt="Tour Riêng Khám Phá Pattaya từ Bangkok hoặc Pattaya">
+                        <div class="content">
+                            <span class="category">Tour • Pattaya</span>
+                            <p class="title">Tour Riêng Khám Phá Pattaya từ Bangkok hoặc Pattaya</p>
+                            <div class="tag">
+                                <span>Tour riêng</span>
+                                <span>Hoàn tiền dễ dàng</span>
+                            </div>
+                            <div class="rating">
+                                <div class="star">★ 4.8</div>
+                                <div class="point">(186)</div>
+                                <div class="total">• 3K+ Đã được đặt</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="price">
+                            <span class="root">Từ US$ 75.45</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item col-3">
+                <a class="inner" href="#"
+                    title="Thuê Xe Có Tài Xế Riêng giữa Bangkok và Pattaya, Ayutthaya, Hua Hin và Khu Vực Khác của TTD">
+                    <div class="top">
+                        <img src="assets/featured-4.webp"
+                            alt="Thuê Xe Có Tài Xế Riêng giữa Bangkok và Pattaya, Ayutthaya, Hua Hin và Khu Vực Khác của TTD">
+                        <div class="content">
+                            <span class="category">Thuê xe có tài xế riêng • Bangkok</span>
+                            <p class="title">Thuê Xe Có Tài Xế Riêng giữa Bangkok và Pattaya, Ayutthaya, Hua Hin và Khu
+                                Vực Khác của TTD</p>
+                            <div class="tag">
+                                <span>Bán chạy</span>
+                                <span>Xe liên tỉnh thành</span>
+                            </div>
+                            <div class="rating">
+                                <div class="star">★ 4.8</div>
+                                <div class="point">(3,639)</div>
+                                <div class="total">• 40K+ Đã được đặt</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="price">
+                            <span class="root">Từ US$ 24.00</span>
+                        </div>
+                        <div class="policy">Đảm bảo chính sách giá tốt</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="arrow next">
+                <svg width="16" height="16" viewBox="0 0 48 48" fill="none">
+                    <path d="M17 8L35 24L26 32L17 40" stroke="#212121" stroke-width="3.6" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

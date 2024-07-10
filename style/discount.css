@@ -1,0 +1,128 @@
+.discountForU .slide {
+  position: relative;
+}
+.discountForU .grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.discountForU .item {
+  border-radius: 16px;
+  min-height: 100%;
+  align-self: stretch;
+}
+.discountForU .item .inner {
+  transition: var(--transitionFast);
+}
+.discountForU .item .inner:hover {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+.discountForU .item img {
+  width: 100%;
+}
+.discountForU .item .mainImg {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.discountForU .item .custom {
+  display: flex;
+  height: 100%;
+  position: relative;
+  background-color: rgb(254, 195, 161);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.discountForU .item .custom .content {
+  padding: 12px;
+  width: 66%;
+  height: 100%;
+}
+.discountForU .item .custom img {
+  width: 34%;
+}
+.discountForU .item .custom .processing {
+  display: flex;
+  align-items: center;
+  padding: 2px 4px;
+  gap: 4px;
+  background: #e6f7f2;
+  color: #08b371;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.discountForU .item .custom .processing p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.discountForU .item .custom .processing svg {
+  height: 17.5px;
+  width: 17.5px;
+}
+.discountForU .item .custom .processing svg path {
+  fill: #08b371;
+}
+.discountForU .item .custom .title,
+.discountForU .item .custom .subTitle {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.discountForU .item .custom .title {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.discountForU .item .custom .subTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.discountForU .item .custom .now {
+  background-color: #fff0e5;
+  color: var(--secondColor);
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0 8px;
+  border-radius: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.discountForU .item .custom .icon {
+  position: absolute;
+}
+.discountForU .item .custom .icon.left {
+  left: 0;
+  top: 6%;
+}
+.discountForU .item .custom .icon.right {
+  bottom: -14px;
+  left: 48%;
+  transform: rotate(90deg);
+}
+.discountForU .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  color: #757575;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+  z-index: 99;
+}
+.discountForU .arrow.next {
+  right: -42px;
+}/*# sourceMappingURL=discount.css.map */
